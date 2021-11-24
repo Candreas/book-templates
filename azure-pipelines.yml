@@ -20,11 +20,14 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'Azure-Abonnement 1(d8cd2f9e-2816-4fe8-b17e-82f9204cab2e)'
     subscriptionId: 'd8cd2f9e-2816-4fe8-b17e-82f9204cab2e'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'TestRG'
     templateLocation: 'Linked artifact'
-    csmFile: 'book-templates/Chapter 03/03-02-02.json'
-    csmParametersFile: 'book-templates/Chapter 03/03-02-05.parameters.prod.json'
+    csmFile: 'book-templates/Chapter 03/03-02-04.json'
     deploymentMode: 'Incremental'
+    
