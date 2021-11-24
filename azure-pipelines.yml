@@ -24,6 +24,6 @@ steps:
     resourceGroupName: 'RM1'
     location: 'Germany West Central'
     templateLocation: 'Linked artifact'
-    csmFile: 'book-templates/Chapter 03/03-01-00.json'
+    csmFile: 'Chapter 03/03-01-00.json'
     deploymentMode: 'Incremental'
    
