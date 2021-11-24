@@ -18,10 +18,10 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'AzureResourceManager'
+    azureResourceManagerConnection: 'prod100'
     subscriptionId: 'd8cd2f9e-2816-4fe8-b17e-82f9204cab2e'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'RM1'
+    resourceGroupName: 'Test_RG'
     location: 'Germany West Central'
     templateLocation: 'Linked artifact'
     csmFile: 'book-templates/Chapter 03/03-02-04.json'
