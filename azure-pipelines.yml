@@ -21,7 +21,7 @@ steps:
     azureResourceManagerConnection: 'AzureResourceManager'
     subscriptionId: 'd8cd2f9e-2816-4fe8-b17e-82f9204cab2e'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'TestRG'
+    resourceGroupName: 'RM1'
     location: 'Germany West Central'
     templateLocation: 'Linked artifact'
     csmFile: 'book-templates/Chapter 03/03-02-04.json'
